@@ -1,0 +1,5 @@
+git remote add movie-web https://github.com/movie-web/movie-web.git
+git fetch movie-web
+# Change `dev` to `master` if you want a stable experience
+git merge movie-web/dev --allow-unrelated-histories
+git push -f # Force push to your origin main branch
